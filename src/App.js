@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DetailsPage from "./components/DetailsPage/DetailsPage";
@@ -10,7 +10,7 @@ import MainPage from "./components/MainPage/MainPage";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Switch>
         <Route exact path={["/", "/current"]} render={() => <MainPage />} />
@@ -29,7 +29,7 @@ const App = () => {
         <Redirect to="/error" />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
