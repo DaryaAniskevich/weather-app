@@ -1,0 +1,37 @@
+.wrapper {
+  min-height: 84vh;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.title:after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 3px;
+  background-color: #ec6e4c;
+  margin: 10px auto 0;
+}
+
+.message {
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: 70px;
+  }
+  .title:after {
+    width: 200px;
+  }
+  .message {
+    font-size: 20px;
+  }
+}

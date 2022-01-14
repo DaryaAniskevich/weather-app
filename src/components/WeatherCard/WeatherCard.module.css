@@ -1,0 +1,172 @@
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  max-width: 400px;
+  min-width: 225px;
+  width: 100%;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.date {
+  margin-top: 7px;
+}
+
+.indicator_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.indicator_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+}
+.indicator_num {
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+}
+
+.feels_temp {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feels_temp_item {
+  width: 70px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.line {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 2px;
+  margin: 20px 0;
+}
+
+.length {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.length_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.length_img {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 991px) {
+  .card {
+    max-width: 300px;
+    min-width: 200px;
+  }
+  .indicator_item {
+    width: 45px;
+  }
+  .date {
+    font-size: 16px;
+  }
+  .img {
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+  }
+  .indicator_item {
+    font-size: 14px;
+  }
+  .feels_temp_item {
+    font-size: 14px;
+  }
+  .line {
+    margin: 10px 0;
+  }
+  .indicator_wrapper_column {
+    padding: 0 5px;
+    flex-direction: column;
+  }
+  .indicator_wrapper_column .indicator_item {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .indicator_wrapper_column .indicator_item div {
+    width: 100%;
+  }
+  .length_item {
+    font-size: 14px;
+  }
+  .length_img {
+    width: 20px;
+    height: 20px;
+  }
+  .indicator_num {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .indicator_item {
+    width: 45px;
+  }
+  .date {
+    font-size: 14px;
+  }
+  .img {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+  }
+  .indicator_item {
+    font-size: 12px;
+  }
+  .feels_temp_item {
+    font-size: 12px;
+    width: 45px;
+  }
+  .line {
+    margin: 10px 0;
+  }
+  .indicator_wrapper_column {
+    flex-direction: column;
+  }
+  .indicator_wrapper_column .indicator_item {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .indicator_wrapper_column .indicator_item div {
+    width: 100%;
+  }
+  .length_item {
+    font-size: 12px;
+  }
+  .length_img {
+    width: 15px;
+    height: 15px;
+  }
+  .indicator_num {
+    font-size: 12px;
+  }
+}

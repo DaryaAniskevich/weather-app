@@ -1,0 +1,19 @@
+.wrapper_hourly {
+  margin-bottom: 20px;
+}
+
+.wrapper_daily {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.daily_card {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .wrapper_daily {
+    justify-content: center;
+  }
+}

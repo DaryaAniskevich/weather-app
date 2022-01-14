@@ -1,0 +1,24 @@
+.line {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.line_title {
+  font-size: 12px;
+  width: 130px;
+  white-space: nowrap;
+}
+.line::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100%;
+  margin-top: 3px;
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+@media (max-width: 991px) {
+  .line {
+    margin: 10px 0;
+  }
+}
